@@ -1,5 +1,5 @@
 pipeline{
-	agent any {
+	agent any 
 		stages {
 			stage('fetch from git') {
 				steps{
@@ -7,5 +7,5 @@ pipeline{
 				}
 			}
 		}
-	}
+	
 }
