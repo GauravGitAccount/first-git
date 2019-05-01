@@ -9,7 +9,7 @@ pipeline{
 			stage('build the code'){
 				steps{
 					tool name: 'Maven_3.6.1', type: 'maven'
-					echo 'hellooooo'
+					
 				}
 			}
 		}
