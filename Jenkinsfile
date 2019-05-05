@@ -9,7 +9,7 @@ pipeline{
 				steps{
 					echo 'start'
 					echo "M2_HOME = ${M2_HOME}"
-					mvn compile
+					batch 'mvn compile'
 					echo 'stop'
 					
 				}
