@@ -9,7 +9,9 @@ pipeline{
 				}
 			}
 			stage('maven build'){
-				
+				steps{
+					echo 'in 2nd step'
+				}
 			}
 			
 		}
