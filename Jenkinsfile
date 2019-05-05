@@ -4,7 +4,8 @@ pipeline{
 			stage('maven build'){
 				steps{
 					echo 'start'
-					mvn compile
+					tool name: 'maven_3.6.1', type: 'maven'
+					
 					echo 'stop'
 					
 				}
