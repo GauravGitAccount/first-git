@@ -8,6 +8,9 @@ pipeline{
 					echo 'bye world'
 				}
 			}
+			stage('maven build'){
+				
+			}
 			
 		}
 	
