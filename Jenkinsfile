@@ -1,3 +1,4 @@
+properties([parameters([choice(choices: ['master', 'feature'], description: 'Please select the branch', name: 'Branch')])])
 pipeline{
 	agent any 
 	tools{
@@ -7,7 +8,7 @@ pipeline{
 		stages {
 			stage('maven build'){
 				steps{
-					properties([parameters([choice(choices: ['master', 'feature'], description: 'Please select the branch', name: 'Branch')])])
+					
 					echo "params.Branch"
 					echo 'start'
 					echo "M2_HOME = ${M2_HOME}"
