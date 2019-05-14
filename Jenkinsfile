@@ -9,7 +9,7 @@ pipeline{
 			stage('maven build'){
 				steps{
 					
-					echo "params.Branch"
+					echo "${params.Branch}"
 					echo 'start'
 					echo "M2_HOME = ${M2_HOME}"
 					echo "PATH = ${PATH}"
